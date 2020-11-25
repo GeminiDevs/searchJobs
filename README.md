@@ -28,6 +28,16 @@
  - Now run the server and launch the web app using:
  ``python manage.py runserver``
  
+ ### Pulling Changes
+ - After every PR merge, one should pull the changes in this manner...
+ - In your local repo, run the following command:
  
- ##### Thank you for your contribution. 
+    ``git pull https://github.com/GeminiDevs/searchJobs.git``
+ - Then push those changes to your remote fork(repo) using:
+ 
+    ``git push -u origin master``
+ - This will even the main branches of both your fork and this repo. 
+ 
+ 
+ ##### Thank you for your input and contribution. 
  ##### And remember, it is your GNU-given right to Fork!
