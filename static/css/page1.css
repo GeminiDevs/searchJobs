@@ -34,12 +34,14 @@
     padding:0;
 }
 body{
-
-    background-image: url(../images/scenery.jpeg);
+    padding-bottom: calc(10rem - 4.5rem);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%), url(../images/scenery.jpeg);
     margin-top:40px;
     background-position:center;
+    background-repeat: no-repeat;
     background-size:cover;
     font-family:sans-serif;
+    opacity: 1;
 }
 
 .regform{
@@ -83,16 +85,29 @@ form{
     font-size: 16px;
 
 }
+/*.job-title{*/
+/*    position: relative;*/
+/*    left:417px;*/
+/*    top:-80px;*/
+/*    line-height: 40px;*/
+/*    border-radius: 6px;*/
+/*    padding: 0 22px;*/
+/*    font-size: 16px;*/
+/*    color:#555;*/
+/*}*/
+
 .job-title{
-    position: relative;
-    left:417px;
-    top:-80px;
+    position:relative;
+    left:200px;
+    top:-37px;
     line-height: 40px;
+    width:480px;
     border-radius: 6px;
     padding: 0 22px;
     font-size: 16px;
-    color:#555;
+    color: #555;
 }
+
 #field{
     position:relative;
     color:#E5E5E5;
@@ -118,7 +133,8 @@ form{
     border-radius: 6px;
     padding: 0 22px;
     font-size: 16px;
-    color: #555;  }
+    color: #555;
+}
 .email{
     position:relative;
     left:200px;
@@ -131,17 +147,7 @@ form{
     color: #555;
 }
 
-.Code{
-    position:relative;
-    left:200px;
-    top:-37px;
-    line-height: 40px;
-    width:95px;
-    border-radius: 6px;
-    padding: 0 22px;
-    font-size: 16px;
-    color: #555;
-}
+
 .number{
     position:relative;
     left:200px;
@@ -153,14 +159,7 @@ form{
     font-size: 16px;
     color: #555;
 }
-.area-code{
-    position:relative;
-    color:#E5E5E5;
-    text-transform:capitalize;
-    font-size:16px;
-    left:54px;
-    top:-4px;
-}
+
 .phone-number{
     position:relative;
     color:#E5E5E5;
@@ -186,7 +185,7 @@ form{
 .option option{
     font-size:20px;
 }
-#coustomer{
+#customer{
     margin-left:25px;
     color:white;
     font-size:18px;

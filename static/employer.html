@@ -1,0 +1,117 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="{% static 'css/page1.css' %}" rel="stylesheet" />
+{#    <script src="js/dropdown.js"></script>#}
+
+</head>
+<body>
+<div class="regform">
+    <h1>Post Job</h1>
+</div>
+<div class="main">
+
+    <form method="POST">
+       
+        <h2 class="name">Job Title </h2>
+       <input class="job-title" id="level2" name="job-title" type="text" required>
+
+        <hr><br>
+        <h2 class="name"> Company</h2>
+        <input class="company" type="text" name="company" required>
+
+         <h2 class="name"> County</h2>
+        <select class="option" name="subject">
+            <option disabled="disabled" selected="selected">--Choose county--</option>
+            <option>Mombasa</option>
+            <option>Kwale</option>
+            <option>Kilifi</option>
+            <option>Tana River</option>
+            <option>Lamu</option>
+            <option>Taita-Taveta</option>
+            <option>Garissa</option>
+            <option>Wajir</option>
+            <option>Mandera</option>
+            <option>Marsabit</option>
+            <option>Isiolo</option>
+            <option>Meru</option>
+            <option>Tharaka-Nithi</option>
+            <option>Kitui</option>
+            <option>Machakos</option>
+            <option>Makueni</option>
+            <option>Nyandarua</option>
+            <option>Nyeri</option>
+            <option>Kirinyaga</option>
+            <option>Murang'a</option>
+            <option>Kiambu</option>
+            <option>Turukana</option>
+            <option>West Pokot</option>
+            <option>Samburu</option>
+            <option>Trans-Nzoia</option>
+            <option>Uasin Gishu</option>
+            <option>Elgeyo-Marakwet</option>
+            <option>Nandi</option>
+            <option>Baringo</option>
+            <option>Laikipia</option>
+            <option>Nakuru</option>
+            <option>Narok</option>
+            <option>Kajiado</option>
+            <option>Kericho</option>
+            <option>Bomet</option>
+            <option>Kakamega</option>
+            <option>Vihiga</option>
+            <option>Bungoma</option>
+            <option>Busia</option>
+            <option>Siaya</option>
+            <option>Kisumu</option>
+            <option>Homa Bay</option>
+            <option>Migori</option>
+            <option>Kisii</option>
+            <option>Nyamira</option>
+            <option>Nairobi</option>
+        </select>
+
+        <h2 class="name">
+            Email</h2>
+        <input class="email" type="email" name="email">
+        <h2 class="name">
+            Phone</h2>
+        <input class="number" type="text" name="phone">
+        <label class="phone-number"></label>
+
+        <h2 id="customer"><b>
+            Full Time job or internship?</b></h2>
+        <label class="radio">
+            <input class="radio-one" type="radio"  name="rdiobtn">
+            <span class="checkmark"></span>
+            <h4>Internship</h4>
+        </label>
+
+        <label class="radio">
+            <input class="radio-two" type="radio" name="rdiobtn">
+            <span class="checkmark"></span>
+            <h4>Full-Time</h4>
+        </label>
+
+        <button type="submit"><h3>Post</h3></button>
+
+    </form>
+</div>
+
+<!--Added functionality to update database-->
+<form>
+
+<!--    <input type="button" value="Delete" onclick=delete>-->
+
+</form>
+</body>
+</html>
